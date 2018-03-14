@@ -1,0 +1,18 @@
+server:
+  port: 8764
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/18295809126/1708b
+          searchPaths:
+          label: master
+          username:
+          password:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
